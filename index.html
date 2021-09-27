@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>해결이요.com</title>
+    <link rel="shortcut icon" href="img/favicon_2.ico" type="image/x-icon">
+
+    <style type="text/css">
+        html, body {height:100%; width:100%; padding:0; margin:0}
+
+        nav, main {box-sizing:border-box; padding:10px; height:100%}
+        nav {background:#AAA;  width:300px; border-right:5px dashed black; float:left}
+        main {background:#DDD; margin-left:300px}
+
+        header {height:120px; border-bottom:5px solid black}
+
+        .cc {padding:0 100px 0; width:calc(100% - 200px)}
+        #bb {height:calc(100% - 125px)}
+
+        #wholemenu {float:right}
+        .menu {float:right; padding:5px 15px 5px; border:5px solid black; margin:0 0 0 -5px}
+    </style>
+
+    <!--
+        https://jos39.tistory.com/170
+        https://stackoverflow.com/q/4212441
+        https://www.zerocho.com/category/HTML&DOM
+        https://m.blog.naver.com/xworks/220548735288
+        https://stackoverflow.com/q/2145181
+        https://fonch.tistory.com/entry/CSS-margin-pdding-%EC%88%9C%EC%84%9C
+    -->
+</head>
+
+<body>
+
+<header class="cc">
+<a href="https://해결이요.com/">
+<img src="img/banner_3.png" style="height:100px; width:auto; margin:10px 0 10px" alt="banner" /></a>
+
+<div id="wholemenu">
+<div style="height:10px"></div>
+<div class="menu"><b>로그인   </b></div>
+<div class="menu"><b>외부 링크</b></div>
+</div>
+</header>
+
+<div class="cc" id="bb">
+<nav>
+    분류
+    <ul>
+        <li>전체  </li>
+        <li>해결  </li>
+        <li>미해결</li>
+    </ul>
+
+    태그 목록
+    <ul>
+        <li>분실물   </li>
+        <li>연락처   </li>
+        <li>판매/대여</li>
+        <li>구매/기증</li>
+        <li>교과 질문</li>
+        <li>마감 기한</li>
+        <li>사용법   </li>
+    </ul>
+
+    사례&nbsp;<button type="button" onclick="alert("TODO");" style="height:16px" /> <!-- 기본 width를 잘 모르겠음 -->
+</nav>
+
+<main style="background:#DDD; margin-left:300px">
+질문 목록
+<ol>
+    <li>질문 1</li>
+    <li>질문 2</li>
+    <li>질문 3</li>
+<ol>
+</main>
+</div>
+
+</body>
+</html>
