@@ -1,0 +1,21 @@
+html, body {height:100%; width:100%; padding:0; margin:0}
+
+nav, main {box-sizing:border-box; padding:10px; height:100%}
+nav {background:#D8D8D8; width:300px; border-right:2px dashed black; border-left:2px dashed black; float:left}
+main {background:#FFF; margin-left:300px; border-right:2px solid black;}
+
+header {height:120px; border-bottom:2px solid black}
+
+.centerobj {padding:0 100px 0; width:calc(100% - 200px)}
+#underobj {height:calc(100% - 122px)}
+
+#menu-whole {float:right}
+.menu-single {float:right; border:2px solid black; margin:0 0 0 -2px}
+.menu-single:hover {background-color:#EEE}
+.menu-hide {display:none}
+.menu-subtext {margin:10px 15px 10px}
+.menu-sl {text-align:center}
+
+#questions li {border-bottom:2px solid black; margin-bottom: 5px; border-color:#777}
+
+button {border-color:black; background-color:#FFF; height:16px}

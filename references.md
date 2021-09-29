@@ -1,0 +1,10 @@
+https://jos39.tistory.com/170
+https://stackoverflow.com/q/4212441
+https://www.zerocho.com/category/HTML&DOM
+https://m.blog.naver.com/xworks/220548735288
+https://stackoverflow.com/q/2145181
+https://fonch.tistory.com/entry/CSS-margin-pdding-%EC%88%9C%EC%84%9C
+http://webberstudy.com/html-css/css-1/font-style/
+https://unabated.tistory.com/entry/displaynone-%EA%B3%BC-visibilityhidden-%EC%9D%98-%EC%B0%A8%EC%9D%B4
+https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+https://d4emon.tistory.com/75

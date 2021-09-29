@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>해결이요.com</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="haegyeol.css" />
+
+    <script src="menu.js"></script>
+</head>
+
 <body>
 
+<header class="centerobj">
+<a href="https://해결이요.com/">
+<img src="banner.png" style="height:100px; width:auto; margin:10px 0 10px" alt="banner" /></a>
 
+<div id="menu-whole">
+<div style="height:10px"></div>
 
+<div class="menu-single">
+    <div class="menu-subtext"><b>로그인   </b></div>
+</div>
+
+<div class="menu-single">
+    <div class="menu-subtext" onclick="switchOuterLink();"><b>외부 링크</b>
+    <div class="menu-hide" id="outer-link">
+        <div class="menu-sl"><a href="https://해결이요.com"></a></div>
+    </div>
+</div>
+
+<script>
+outerLink = document.getElementById("outer-link");
+</script>
+
+</div>
+</header>
+
+<div class="centerobj" id="underobj">
+
+<main>
+<h1>분실물이 있습니다! </h1>
+<p>
+내용
+</p>
+</main>
+</div>
 
 </body>
 </html>
