@@ -1,8 +1,8 @@
 html, body {height:100%; width:100%; padding:0; margin:0}
 
 nav, main {box-sizing:border-box; padding:10px; height:100%}
-nav {background:#D8D8D8; width:300px; border-right:2px dashed black; border-left:2px dashed black; float:left}
-main {background:#FFF; margin-left:300px; border-right:2px solid black;}
+nav  {background:#D8D8D8; width:250px;       border-width:0 2px 0 2px; border-style: dashed; border-color: black; float:left}
+main {background:#FFF;    margin-left:250px; border-width:0 2px 0 2px; border-style: solid;  border-color: black; }
 
 header {height:120px; border-bottom:2px solid black}
 
@@ -18,4 +18,4 @@ header {height:120px; border-bottom:2px solid black}
 
 #questions li {border-bottom:2px solid black; margin-bottom: 5px; border-color:#777}
 
-button {border-color:black; background-color:#FFF; height:16px}
+button {border-color:black; background-color:#FFF}
