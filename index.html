@@ -13,65 +13,42 @@
 
 <header>
 <a href="https://해결이요.com/">
-<img src="favicon.png" style="float:left; display:inline-block; height:115px; width:auto; margin:10px 0 10px" alt="banner" /></a>
-
-<div style="display:inline-block; margin:40px 0 0 10px; height:135px; font-family:'OTWelcomeBA'; font-size:60px; color:white">해결이요.com</div>
-
-<div id="menu-whole" style="position:absolute; bottom:0; right:0">
-<div style="height:10px"></div>
-
-<div class="menu-single">
-<div class="menu-subtext"><b>로그인   </b></div>
-</div>
-
-<div class="menu-single">
-    <div class="menu-subtext" onclick="switchOuterLink();"><b>외부 링크</b>
-    <div class="menu-hide" id="outer-link">
-        <div class="menu-sl"><a href="https://해결이요.com"></a></div>
-    </div>
-</div>
+<img src="banner_ko.png" id="banner" alt="banner" /></a>
 
 <script>
-outerLink = document.getElementById("outer-link");
+outer_link = document.getElementById("outer_link");
 </script>
 
 </div>
 </header>
 
-<div id="header-line"></div>
+<div id="header_line"></div>
 
-<div class="center-obj" id="under-obj">
-<nav>
-    <b>분류</b>
-    <ul>
-        <li>전체  </li>
-        <li>해결  </li>
-        <li>미해결</li>
-    </ul>
+<main>
+<ul class="main_ul" id="qno">
+    <li>46</li>
+    <li>45</li>
+    <li>44</li>
+    <li>43</li>
+    <li>42</li>
+    <li>41</li>
+    <li>40</li>
+</ul>
 
-    <b>태그 목록</b>
-    <ul>
-        <li>분실물   </li>
-        <li>연락처   </li>
-        <li>판매/대여</li>
-        <li>구매/기증</li>
-        <li>교과 질문</li>
-        <li>마감 기한</li>
-        <li>사용법   </li>
-    </ul>
-
-    사례&nbsp;<button type="button" onclick="alert('TODO');" style="height:16px" /> <!-- 기본 width가 16인 것 같은데 잘 모르겠음 -->
-</nav>
-
-<main style="border-left:none">
-<b>질문 목록</b>
-<ol id="questions">
+<div style="float:left; margin:0 10px 0">
+<ul class="main_ul" id="qtitle">
     <li>질문 1</li>
     <li>질문 2</li>
     <li>질문 3</li>
-<ol>
-</main>
+<ul>
 </div>
+
+<ul class="main_ul" id="qstd">
+    <li>20-046 박지훈</li>
+    <li>20-046 박지훈</li>
+    <li>20-046 박지훈</li>
+</ul>
+</main>
 
 </body>
 </html>

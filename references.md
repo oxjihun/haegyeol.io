@@ -8,3 +8,4 @@ http://webberstudy.com/html-css/css-1/font-style/
 https://unabated.tistory.com/entry/displaynone-%EA%B3%BC-visibilityhidden-%EC%9D%98-%EC%B0%A8%EC%9D%B4
 https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
 https://d4emon.tistory.com/75
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none

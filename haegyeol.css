@@ -12,25 +12,34 @@
     font-style: normal;
 }
 
-html, body {height:100%; width:100%; padding:0; margin:0}
+* {
+    box-sizing:border-box;
+}
 
-nav, main {box-sizing:border-box; padding:10px; height:100%}
-nav  {background:#D8D8D8; width:250px;       border-width:0 2px 0 2px; border-style: dashed; border-color: black; float:left}
-main {background:#FFF;    margin-left:250px; border-width:0 2px 0 2px; border-style: solid;  border-color: black}
+html, body {
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
 
-header {height:135px; width:100%; padding: 0 150px 0; box-sizing:border-box; background-color: #2F5597}
-#header-line {width:100%; box-sizing:border-box; height:6px; border-width:0 0 3px; border-style:solid; border-color: #2F5597}
+header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
+#header_line {width:100%; height:4px;   margin:4px 0 7px;   background: #2F5597}
+#banner      {width:auto; height:115px; margin:10px 0 10px; float:left; display:inline-block}
 
-.center-obj {padding:0 150px 0; width:calc(100% - 300px)}
-#under-obj {height:calc(100% - 150px)}
+main {
+    height:calc(100% - 150px);
+    width: calc(100% - 2 * 200px);
+    margin:0 200px 0;
+    padding:0 10px 0;
+    border-width:0 4px 0;
+    border-style: solid;
+    border-color: #2F5597;
+}
 
-#menu-whole {float:right; float:bottom}
-.menu-single {float:right; border:2px solid black; margin:0 0 0 -2px}
-.menu-single:hover {background-color:#EEE}
-.menu-hide {display:none}
-.menu-subtext {margin:10px 15px 10px}
-.menu-sl {text-align:center}
+.main_ul    {list-style-type:none; margin:0; padding:0; height:100%}
+.main_ul li {font-family:OTWelcomeRA; font-size:1.5em; color:#2F5597; margin:5px 0 5px}
 
-#questions li {border-bottom:2px solid black; margin-bottom: 5px; border-color:#777}
-
+#qno  {float:left;  padding-right:10px; border-right:4px solid #2F5597}
+#qstd {float:right; padding-left:10px;  border-left:4px solid #2F5597}
 button {border-color:black; background-color:#FFF}
