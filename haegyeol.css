@@ -1,15 +1,30 @@
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {height:100%; width:100%; padding:0; margin:0}
 
 nav, main {box-sizing:border-box; padding:10px; height:100%}
 nav  {background:#D8D8D8; width:250px;       border-width:0 2px 0 2px; border-style: dashed; border-color: black; float:left}
-main {background:#FFF;    margin-left:250px; border-width:0 2px 0 2px; border-style: solid;  border-color: black; }
+main {background:#FFF;    margin-left:250px; border-width:0 2px 0 2px; border-style: solid;  border-color: black}
 
-header {height:120px; border-bottom:2px solid black}
+header {height:135px; width:100%; padding: 0 150px 0; box-sizing:border-box; background-color: #2F5597}
+#header-line {width:100%; box-sizing:border-box; height:6px; border-width:0 0 3px; border-style:solid; border-color: #2F5597}
 
-.centerobj {padding:0 100px 0; width:calc(100% - 200px)}
-#underobj {height:calc(100% - 122px)}
+.center-obj {padding:0 150px 0; width:calc(100% - 300px)}
+#under-obj {height:calc(100% - 150px)}
 
-#menu-whole {float:right}
+#menu-whole {float:right; float:bottom}
 .menu-single {float:right; border:2px solid black; margin:0 0 0 -2px}
 .menu-single:hover {background-color:#EEE}
 .menu-hide {display:none}
