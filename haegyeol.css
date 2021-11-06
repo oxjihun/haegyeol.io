@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+p {
+    font-family:OTWelcomeRA
+}
+
 * {
     box-sizing:border-box;
 }
@@ -25,21 +29,44 @@ html, body {
 
 header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
 #header_line {width:100%; height:4px;   margin:4px 0 7px;   background: #2F5597}
-#banner      {width:auto; height:115px; margin:10px 0 10px; float:left; display:inline-block}
+#banner      {width:auto; height:calc(100% - 20px); margin:10px 0 10px; float:left; display:inline-block}
+
+#menu_wrapper {height:calc(100% - 20px); margin:10px; float:right}
+#menu_filler  {height:calc(100% - 35px)}
+#menu_bar     {height:35px; font-family:OTWelcomeRA; font-size:0; color:white}
+
+.menu_group   {display:inline-block; vertical-align:top}
+.menu_title   {height:35px; padding-top:5px; text-align:right; vertical-align:bottom; font-size:1.5rem}
+.menu_title:hover {
+    background:white;
+    color:#2F5597;
+}
+.menu_subarea {border:4px solid #2F5597; background:white; padding:10px; position:relative; top:6px; z-index:1000}
+.menu_subarea a {
+    color:inherit;
+    text-decoration:inherit;
+    background:white;
+}
+.menu_submenu {text-align:right; height:30px; font-size:1.2rem; color:#2F5597}
+.menu_divider {height:20px; width:4px; background:white; margin:5px 13px 0}
 
 main {
-    height:calc(100% - 150px);
+    height:calc(100% - 135px - 15px);
     width: calc(100% - 2 * 200px);
     margin:0 200px 0;
     padding:0 10px 0;
+    background: white;
     border-width:0 4px 0;
-    border-style: solid;
-    border-color: #2F5597;
+    border-style:solid;
+    border-color:#2F5597;
 }
 
 .main_ul    {list-style-type:none; margin:0; padding:0; height:100%}
-.main_ul li {font-family:OTWelcomeRA; font-size:1.5em; color:#2F5597; margin:5px 0 5px}
+.main_ul li {height:35px; margin:5px 0 5px; font-family:OTWelcomeRA; font-size:1.5em; color:#2F5597}
 
-#qno  {float:left;  padding-right:10px; border-right:4px solid #2F5597}
-#qstd {float:right; padding-left:10px;  border-left:4px solid #2F5597}
+#qno  {text-align:center; float:left;  padding-right:10px; border-right:4px solid #2F5597; width:70px}
+#qstd {text-align:center; float:right; padding-left:10px;  border-left:4px solid #2F5597;  width:180px}
+#qtt  {width:100%}
+#qtt_container {width:calc(100% - 70px - 180px - 20px)}
+
 button {border-color:black; background-color:#FFF}

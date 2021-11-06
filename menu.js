@@ -1,7 +1,7 @@
 var outerLink;
 function switchOuterLink() {
-    if(outerLink.getAttribute("display") === "none")
-        outerLink.setAttribute("display", "block");
+    if(outer_link.getAttribute("display") === "none")
+        outer_link.setAttribute("display", "block");
     else
-        outerLink.setAttribute("display", "none");
+        outer_link.setAttribute("display", "none");
 }
