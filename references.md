@@ -45,3 +45,25 @@ https://www.zerocho.com/category/CSS/post/5864f3b59f1dc000182d3ea1
 https://stackoverflow.com/a/8919740
 
 https://stackoverflow.com/q/17711146
+
+https://pretagteam.com/question/cannot-set-a-global-variable-inside-a-onload-method
+
+https://css-tricks.com/almanac/properties/b/background-repeat/
+
+https://stackoverflow.com/q/16484507
+
+https://hianna.tistory.com/492
+
+https://stackoverflow.com/q/807878
+
+https://stackoverflow.com/q/4981454
+
+https://stackoverflow.com/q/4866229
+
+https://stackoverflow.com/q/20988458
+
+https://stackoverflow.com/q/3779534
+
+https://aboooks.tistory.com/82
+
+https://www.computerhope.com/issues/ch001475.htm

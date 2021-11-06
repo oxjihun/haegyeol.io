@@ -6,25 +6,22 @@
     <title>해결이요.com</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="haegyeol.css" />
-    <script src="menu.js"></script>
+    <script src="haegyeol.js"></script>
 </head>
 
 <body>
+<a name="top"></a>
 
 <header>
 <a href="https://해결이요.com/">
-<img src="banner_ko.png" id="banner" alt="banner" /></a>
-
-<script>
-outer_link = document.getElementById("outer_link");
-</script>
+<img src="images/banner_ko.png" id="banner" alt="banner" /></a>
 
 <div id="menu_wrapper">
     <div id="menu_filler"></div>
     <div id="menu_bar">
-        <div class="menu_group" style="width:150px">
+        <div class="menu_group" id="ol_title" style="width:150px">
             <div class="menu_title">외부 사이트</div>
-            <div class="menu_subarea">
+            <div class="menu_subarea" id="ol_subarea">
                 <a target="_blank" href="https://www.ksa.hs.kr/">        <div class="menu_submenu">KSA 홈페이지 </div></a>
                 <a target="_blank" href="https://gaonnuri.ksain.net/xe/"><div class="menu_submenu">가온누리     </div></a>
                 <a target="_blank" href="https://ksaidev.com/">          <div class="menu_submenu">IDEV 홈페이지</div></a>
@@ -43,41 +40,59 @@ outer_link = document.getElementById("outer_link");
 
 </header>
 
-<div id="header_line"></div>
+<div class="header_line" style="height:4px; background:white  "></div>
+<div class="header_line" style="height:4px; background:#2F5597"></div>
+<div class="header_line" style="height:7px; background:white  "></div>
 
 <main>
-<ul class="main_ul" id="qno">
-    <li>46</li>
-    <li>45</li>
-    <li>44</li>
-    <li>43</li>
-    <li>42</li>
-    <li>41</li>
-    <li>40</li>
-</ul>
+<div id="qno" class="main_main" style="width:70px">
+    <ul class="main_ul">
+        <li>46</li>
+        <li>45</li>
+        <li>44</li>
+        <li>43</li>
+        <li>42</li>
+        <li>41</li>
+        <li>40</li>
+    </ul>
+</div><!--
 
-<div id="qtt_container" style="float:left; margin:0 10px 0">
-<ul class="main_ul" id="qtt">
-    <li>질문 1</li>
-    <li>질문 2</li>
-    <li>질문 3</li>
-    <li>질문 1</li>
-    <li>질문 2</li>
-    <li>질문 3</li>
-    <li>질문 1</li>
-<ul>
+--><div id="qtt" class="main_main" style="width:calc(100% - 70px - 180px)">
+    <ul class="main_ul">
+        <li>질문 1</li>
+        <li>질문 2</li>
+        <li>질문 3</li>
+        <li>질문 1</li>
+        <li>질문 2</li>
+        <li>질문 3</li>
+        <li>질문 1</li>
+    </ul>
+
+</div><!--
+
+--><div id="qstd" class="main_main" style="width:180px">
+    <ul class="main_ul">
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+        <li>20-046 박지훈</li>
+    </ul>
 </div>
 
-<ul class="main_ul" id="qstd">
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-    <li>20-046 박지훈</li>
-</ul>
+<div style="width:100%; height:calc(100vh - 135px - 15px - 5px - 7*40px)"></div>
 </main>
 
+<div id="sidebar">
+    <a href="#top">   <img class="sidebar_item" src="images/up.png" />  </a>
+    <img class="sidebar_item" src="images/filter.png" />
+    <a href="#bottom"><img class="sidebar_item" src="images/down.png" /></a>
+</div>
+
+<div id="black_screen"></div>
+
+<a name="bottom"></a>
 </body>
 </html>
