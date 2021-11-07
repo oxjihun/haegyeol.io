@@ -87,3 +87,7 @@ https://www.zerocho.com/category/HTML&DOM/post/5823eff1cf58b000181d2ea3
 https://stackoverflow.com/q/8683528
 
 https://github.com/Semantic-Org/Semantic-UI/issues/1746
+
+https://www.w3schools.com/cssref/pr_border-top.asp
+
+https://stackoverflow.com/q/24917983

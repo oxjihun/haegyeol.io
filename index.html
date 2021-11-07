@@ -88,10 +88,21 @@
 <!-- Need to move to css -->
 
 <div id="search_div">
-<form action="" method="get">
-    <input id="search_bar" />
-    <button id="search_btn" />
-</form>
+    <div style="height:52px">
+        <form action="" method="get">
+            <input id="search_bar" />
+            <button id="search_btn"></button>
+        </form>
+    </div>
+    <div id="filter_div" style="font-size:1.2rem; border-top: 4px solid #203864; padding:10px">
+        <div style="height:30px">전체 | 미해결 | 해결</div>
+        <div style="height:30px">인기 해시태그</div>
+        <div style="height:calc(30px + 13px); width:472px; overflow-x:scroll; white-space:nowrap">#분실물 #연락처 #판매/대여 #구매/기증 #교과 질문 #마감 기한 #사용법</div>
+        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>사례금</div>
+        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>추첨</div>
+        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>설문</div>
+        <div style="height:30px">질문자: <input style="height:30px; width:150px; border:2px solid #203864" value="학번"></input></div>
+    </div>
 </div>
 
 <div id="black_screen"></div>
