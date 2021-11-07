@@ -1,22 +1,19 @@
 @font-face {
-    font-family: 'OTWelcomeRA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'OTWelcomeBA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-p {
-    font-family:OTWelcomeRA
-}
-
 * {
+    font-family:Cafe24SsurroundAir; 
     box-sizing:border-box;
 }
 
@@ -31,6 +28,23 @@ body {
     background-image: url(images/tile.png);
     background-repeat: repeat;
     background-size: 75px 75px;
+    font-size:0;
+}
+
+input {
+    color:#203864;
+}
+
+input {
+    border-width:0;
+    border:none;
+    box-shadow:none; 
+}
+
+input:focus {
+    padding:0px;
+    margin:0px;
+    outline:none
 }
 
 header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
@@ -39,7 +53,7 @@ header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
 
 #menu_wrapper {height:calc(100% - 20px); margin:10px; float:right; cursor:default; user-select:none}
 #menu_filler  {height:calc(100% - 35px)}
-#menu_bar     {height:35px; font-family:OTWelcomeRA; font-size:0; color:white}
+#menu_bar     {height:35px; color:white}
 
 .menu_group   {display:inline-block; vertical-align:top}
 .menu_title   {height:35px; padding-top:5px; text-align:right; vertical-align:bottom; font-size:1.5rem}
@@ -47,47 +61,40 @@ header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
     background:white;
     color:#2F5597;
 }
-.menu_subarea {border:4px solid #2F5597; background:white; padding:10px 10px 0; position:relative; z-index:1000}
+.menu_subarea {border:4px solid #203864; background:white; padding:10px 10px 0; position:relative; z-index:1000; display:none}
 .menu_subarea a {
-    color:inherit;
     text-decoration:inherit;
     background:white;
 }
-.menu_submenu {text-align:right; height:30px; font-size:1.2rem; color:#2F5597}
+.menu_submenu {text-align:right; height:30px; font-size:1.2rem; color:#203864}
 .menu_divider {height:20px; width:4px; background:white; margin:5px 13px 0}
 
-#ol_subarea {
-    display:none;
-}
-
 main {
-    width: calc(100% - 2 * 200px);
+    width:calc(100% - 2 * 200px);
     margin:0 200px 0;
     padding:0 10px 0;
     background: white;
     border-width:0 4px 0;
     border-style:solid;
-    border-color:#2F5597;
+    border-color:#203864;
 }
 
-#main_filler {
-    height:15px;
-    width: calc(100% - 2 * 200px);
-    margin:0 200px 0;
-    background: white;
+.main_ul    {display:inline-block; list-style-type:none; margin:0; padding:0; min-height:calc(100vh - 135px - 15px)}
+.main_ul li {height:35px; margin:5px 0 5px; font-size:1.5rem}
+
+#search, #filter {
+    cursor: pointer;
 }
 
-.main_main  {display:inline-block}
-.main_ul    {list-style-type:none; margin:0; padding:0}
-.main_ul li {height:35px; margin:5px 0 5px; font-family:OTWelcomeRA; font-size:1.5em; color:#2F5597}
-
-#qno  {text-align:center; padding-right:10px; border-right:4px solid #2F5597; width:70px}
-#qstd {text-align:center; padding-left:10px;  border-left:4px solid #2F5597;  width:180px}
+#qno  {text-align:center; padding-right:10px; border-right:4px solid #203864; width:70px}
 #qtt  {padding-left:10px}
+#qstd {text-align:center; padding-left:10px;  border-left:4px solid #203864;  width:180px}
 
-#sidebar {width:50px; height:200px; position:fixed; top:calc(135px + 15px - 5px); right:calc(200px - 50px)}
-.sidebar_item {height:40px; width:40px; margin:5px}
+#sidebar {width:50px; height:200px; position:fixed; z-index:3000; top:calc(135px + 15px - 5px); right:calc(200px - 50px)}
+.sidebar_item {height:40px; width:40px; margin:5px; position:relative; z-index:3000}
+
+#search_div {border:4px solid #203864; background:white; position:fixed; top:calc(135px + 15px + 50px); right:200px; display:none; z-index:3000}
+#search_bar {display:inline-block; float:left; width:440px; height:52px; padding:0 10px 0; margin:0; font-size:1.2rem}
+#search_btn {display:inline-block; float:left; width:52px;  height:52px; border:none; background:url(images/search_square.png); background-size:52px 52px}
 
 #black_screen {position:fixed; top:0; left:0; right:0; bottom:0; background:black; z-index:2000; opacity:0.5; display:none}
-
-button {border-color:black; background-color:#FFF}

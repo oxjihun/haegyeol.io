@@ -19,7 +19,7 @@
 <div id="menu_wrapper">
     <div id="menu_filler"></div>
     <div id="menu_bar">
-        <div class="menu_group" id="ol_title" style="width:150px">
+        <div class="menu_group" id="ol_title" style="width:170px">
             <div class="menu_title">외부 사이트</div>
             <div class="menu_subarea" id="ol_subarea">
                 <a target="_blank" href="https://www.ksa.hs.kr/">        <div class="menu_submenu">KSA 홈페이지 </div></a>
@@ -28,11 +28,11 @@
             </div>
         </div>
         <div class="menu_group menu_divider"></div>
-        <div class="menu_group" style="width:70px">
+        <div class="menu_group" style="width:80px">
             <div class="menu_title">About</div>
         </div>
         <div class="menu_group menu_divider"></div>
-        <div class="menu_group" style="width:65px">
+        <div class="menu_group" style="width:70px">
             <div class="menu_title">로그인</div>
         </div>
     </div>
@@ -45,8 +45,7 @@
 <div class="header_line" style="height:7px; background:white  "></div>
 
 <main>
-<div id="qno" class="main_main" style="width:70px">
-    <ul class="main_ul">
+    <ul id="qno" class="main_ul" style="width:70px">
         <li>46</li>
         <li>45</li>
         <li>44</li>
@@ -55,10 +54,8 @@
         <li>41</li>
         <li>40</li>
     </ul>
-</div><!--
 
---><div id="qtt" class="main_main" style="width:calc(100% - 70px - 180px)">
-    <ul class="main_ul">
+    <ul id="qtt" class="main_ul" style="width:calc(100% - 70px - 200px)">
         <li>질문 1</li>
         <li>질문 2</li>
         <li>질문 3</li>
@@ -68,10 +65,7 @@
         <li>질문 1</li>
     </ul>
 
-</div><!--
-
---><div id="qstd" class="main_main" style="width:180px">
-    <ul class="main_ul">
+    <ul id="qstd" class="main_ul" style="width:200px">
         <li>20-046 박지훈</li>
         <li>20-046 박지훈</li>
         <li>20-046 박지훈</li>
@@ -82,13 +76,22 @@
     </ul>
 </div>
 
-<div style="width:100%; height:calc(100vh - 135px - 15px - 5px - 7*40px)"></div>
 </main>
 
 <div id="sidebar">
     <a href="#top">   <img class="sidebar_item" src="images/up.png" />  </a>
-    <img class="sidebar_item" src="images/filter.png" />
+    <img class="sidebar_item" src="images/search.png" id="search" />
+    <img class="sidebar_item" src="images/filter.png" id="filter" />
     <a href="#bottom"><img class="sidebar_item" src="images/down.png" /></a>
+</div>
+
+<!-- Need to move to css -->
+
+<div id="search_div">
+<form action="" method="get">
+    <input id="search_bar" />
+    <button id="search_btn" />
+</form>
 </div>
 
 <div id="black_screen"></div>

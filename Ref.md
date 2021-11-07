@@ -67,3 +67,23 @@ https://stackoverflow.com/q/3779534
 https://aboooks.tistory.com/82
 
 https://www.computerhope.com/issues/ch001475.htm
+
+# 2021-11-07
+
+https://developer.mozilla.org/ko/docs/Web/CSS/cursor
+
+https://doolyit.tistory.com/80
+
+https://developer.mozilla.org/ko/docs/Web/CSS/min-width
+
+https://stackoverflow.com/q/8468066
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+https://stackoverflow.com/q/14618028
+
+https://www.zerocho.com/category/HTML&DOM/post/5823eff1cf58b000181d2ea3
+
+https://stackoverflow.com/q/8683528
+
+https://github.com/Semantic-Org/Semantic-UI/issues/1746
