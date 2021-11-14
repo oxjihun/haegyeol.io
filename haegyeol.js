@@ -5,14 +5,24 @@ window.onload = function() {
 
     search = document.getElementById("search");
     search_div = document.getElementById("search_div");
+    search_bar = document.getElementById("search_bar");
     filter = document.getElementById("filter");
     filter_div = document.getElementById("filter_div");
+
+    hashtag_list = document.getElementById("hashtag_list");
+    hashtag = hashtag_list.children;
 
     black_screen.style.display = "none";
     filter_div.style.display = "none";
 
     ol_title.addEventListener("mouseover", showOL);
     ol_title.addEventListener("mouseout",  hideOL);
+
+    for(let i=0; i < hashtag.length; i++) {
+        hashtag[i].addEventListener("click", event => {
+            changeHashtag(i);
+        });
+    }
     
     search.addEventListener("click", event => {
         if(showing_sidebar === "search"){
@@ -79,4 +89,36 @@ function switchSearch(event) {
         black_screen.style.display = "block";
     else
         black_screen.style.display = "none";
+}
+
+function changeHashtag(i) {
+    var hiT = hashtag[i].innerText;
+    var k0 = search_bar.value.split(" ");
+    var k1 = []
+    var keywords = [];
+    for(let i=0; i < k0.length; i++) {
+        if(k0[i] !== "") {
+            k1.push(k0[i]);
+        }
+    }
+    if(k1.length === 0) {
+        search_bar.value = hiT;
+        return 0;
+    }
+    for(let i=0; i < k1.length; i++) {
+        var keyword = k1[i].split("#");
+        if(keyword[0] !== "") {
+            keywords.push(keyword[0]);
+        }
+        for(let j=1; j < keyword.length; j++) {
+            keywords.push("#" + keyword[j]);
+        }
+    }
+    if(keywords.includes(hiT)) {
+        var i = keywords.indexOf(hiT);
+        keywords.splice(i, 1);
+    } else {
+        keywords.push(hiT);
+    }
+    search_bar.value = keywords.join(" ");
 }

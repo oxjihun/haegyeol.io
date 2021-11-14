@@ -3,53 +3,149 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Q. TODO</title> <!-- 글 제목에 따라 바뀌게 할 예정 -->
+    <title>Q. 질문 1</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="haegyeol.css" />
+    <!-- additional css, 55px -->
+    <style>
+        header      {height:55px}
+        main        {min-height:calc(100vh - 55px - 15px)}
+        #sidebar    {top:calc(55px + 15px - 5px)}
+        #search_div {top:calc(55px + 15px)}
 
-    <script src="menu.js"></script>
+        main    {padding:0 20px 0; color:#203864}
+        main p  {font-size:1.5rem}
+        main h1 {font-size:3rem}
+        main h2 {font-size:2.5rem}
+        main h1 {padding:10px 0 0; border:0; margin-top:0; margin-right:0; margin-left:calc(135px - 35px); text-align:right; font-family:Cafe24Ssurround}
+    </style>
+    <script src="haegyeol.js"></script>
 </head>
 
 <body>
+<a name="top"></a>
 
-<header class="centerobj">
+<header>
 <a href="https://해결이요.com/">
-<img src="banner.png" style="height:100px; width:auto; margin:10px 0 10px" alt="banner" /></a>
+<div id="banner_sq"></div>
+<img src="images/favicon.png" id="banner" alt="banner" /></a>
 
-<div id="menu-whole">
-<div style="height:10px"></div>
-
-<div class="menu-single">
-    <div class="menu-subtext"><b>로그인   </b></div>
-</div>
-
-<div class="menu-single">
-    <div class="menu-subtext" onclick="switchOuterLink();"><b>외부 링크</b>
-    <div class="menu-hide" id="outer-link">
-        <div class="menu-sl"><a href="https://해결이요.com"></a></div>
+<div id="menu_wrapper">
+    <div id="menu_filler"></div>
+    <div id="menu_bar">
+        <div class="menu_group" id="ol_title" style="width:170px">
+            <div class="menu_title">외부 사이트</div>
+            <div class="menu_subarea" id="ol_subarea">
+                <a target="_blank" href="https://www.ksa.hs.kr/">        <div class="menu_submenu">KSA 홈페이지 </div></a>
+                <a target="_blank" href="https://gaonnuri.ksain.net/xe/"><div class="menu_submenu">가온누리     </div></a>
+                <a target="_blank" href="https://ksaidev.com/">          <div class="menu_submenu">IDEV 홈페이지</div></a>
+            </div>
+        </div>
+        <div class="menu_group menu_divider"></div>
+        <div class="menu_group">
+            <div class="menu_title">About</div>
+        </div>
+        <div class="menu_group menu_divider"></div>
+        <div class="menu_group">
+            <div class="menu_title">로그인</div>
+        </div>
     </div>
 </div>
 
-<script>
-outerLink = document.getElementById("outer-link");
-</script>
-
-</div>
 </header>
 
-<div class="centerobj" id="underobj">
+<div class="hor_line" style="height:4px; background:white  "></div>
+<div class="hor_line" style="height:4px; background:#2F5597"></div>
+<div class="hor_line" style="height:7px; background:white  "></div>
 
-<main style="margin:0">
-<p>&lt;- 돌아가기</p>
+<!-- Need to move to css until next comment, only for this qna page -->
 
-<h2>번호. 분실물이 있습니다!</h2>
-<p>
-USB를 잃어버렸습니다. 
-</p>
-<textarea placeholder="댓글 쓰기" style="display:inline-block; width:750px; height:150px"></textarea> <!-- resize -->
-<button type="button">제출</button>
-</main>
+<main>
+    <h1>질문 1</h1>
+    <p style="text-align:right">20-046 박지훈</p>
+    <p style="line-height:2rem; text-align:justify">&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum elit est, non ultrices elit placerat accumsan. Etiam quis urna sed ante ultricies iaculis non et ante. Nulla pulvinar facilisis erat, non lacinia leo varius et. Vivamus dolor eros, egestas eu nulla sed, scelerisque euismod odio. Duis justo massa, porta et felis ut, tempus tincidunt tellus. Duis in quam ac ante vulputate pretium. Nunc in ultrices quam. Morbi vehicula dictum dui, nec vehicula lorem bibendum quis.</p>
+<div class="hor_line" style="height:4px; background:#203864"></div>
+<div>
+    <div style="display:inline-block; width:50%; padding:0 10px 0; vertical-align:top">
+        <h2>댓글</h2>
+        <p style="border-bottom:2px solid #203864">??? - 견우관 5층 복도에 떨어져 있습니다.</p>
+        <p style="text-align:right; border-bottom:2px solid #203864">해결이요! - 나</p>
+    </div>
+    <div style="display:inline-block; width:50%; padding:0 10px 0; vertical-align:top">
+    <form>
+        <h2>댓글 쓰기</h2>
+        <textarea style="width:100%; height:100px; resize:vertical; font-size:1.2rem"></textarea>
+        <button>등록</button>
+    </form>
+    </div>
 </div>
 
+<div class="hor_line" style="height:8px; background:white"></div>
+</main>
+
+<!-- until here -->
+
+<div id="sidebar">
+    <a href="#top">   <img class="sidebar_item" src="images/up.png" />  </a>
+    <img class="sidebar_item" src="images/search.png" id="search" />
+    <img class="sidebar_item" src="images/filter.png" id="filter" />
+    <a href="#bottom"><img class="sidebar_item" src="images/down.png" /></a>
+</div>
+
+<!-- Need to regularly update from index.html -->
+
+<div id="search_div">
+<form action="" method="get">
+    <div id="search_top">
+        <input id="search_bar" name="query" />
+        <button id="search_btn" type="submit"></button>
+    </div>
+    <div id="filter_div">
+        <div class="search_line">
+            <label><input type="radio" name="category" value="all" />전체</label>
+            <label><input type="radio" name="category" value="solved" />해결</label>
+            <label><input type="radio" name="category" value="unsolved" checked="checked" />미해결</label>
+        </div>
+        <div id="hashtag_list">
+            <!-- KSA 21 대화톡을 분석하여 제작함 -->
+            <div>#사람찾습니다</div>
+            <div>#연락부탁드립니다</div>
+            <div>#구합니다</div>
+            <div>#삽니다</div>
+            <div>#기증합니다</div>
+            <div>#대여합니다</div>
+            <div>#팝니다</div>
+            <div>#잃어버렸습니다</div>
+            <div>#찾았습니다</div>
+            <div>#트레이드</div>
+            <div>#R&E</div>
+            <div>#연기세</div>
+            <div>#링크</div>
+            <div>#연락처</div>
+            <div>#파일</div>
+        </div>
+        <div class="search_line">
+            <label><input type="checkbox" name="reward" />사례</label>
+        </div>
+        <div class="search_line">
+            <span>질문자 학번: </span>
+            <input type="number" name="stdyear" placeholder="기수" min="0" max="99" />
+            <span>&nbsp;-&nbsp;</span>
+            <input type="number" name="stdnum" placeholder="번호" min="0" max="999" />
+        </div>
+        <div class="search_line">
+            <input type="date" name="date_start" />
+            <span>&nbsp;~&nbsp;</span>
+            <input type="date" name="date_end" />
+        </div>
+    </div>
+</form>
+</div>
+
+<!-- until here -->
+
+<div id="black_screen"></div>
+
+<a name="bottom"></a>
 </body>
 </html>

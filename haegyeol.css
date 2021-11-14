@@ -1,3 +1,5 @@
+/* #2F5597, #203864 */
+
 @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
@@ -25,31 +27,23 @@ html, body {
 }
 
 body {
-    background-image: url(images/tile.png);
-    background-repeat: repeat;
-    background-size: 75px 75px;
+    background-image:url(images/tile.png);
+    background-repeat:repeat;
+    background-size:75px 75px;
     font-size:0;
 }
 
-input {
-    color:#203864;
+a {
+    text-decoration:inherit;
+    background:white;
+    cursor:pointer;
+    color:inherit;
 }
 
-input {
-    border-width:0;
-    border:none;
-    box-shadow:none; 
-}
-
-input:focus {
-    padding:0px;
-    margin:0px;
-    outline:none
-}
-
-header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
-.header_line {width:100%}
-#banner      {width:auto; height:calc(100% - 20px); margin:10px 0 10px; float:left; display:inline-block}
+header     {width:100%; padding:0 200px 0; background:#2F5597;                 position:relative}
+.hor_line  {width:100%}
+#banner    {width:auto;  height:115px; margin:10px; display:inline-block;      position:absolute; top:0; bottom:0}
+#banner_sq {width:135px; height:135px; background:#2F5597; border-radius:40px; position:absolute; top:0; bottom:0}
 
 #menu_wrapper {height:calc(100% - 20px); margin:10px; float:right; cursor:default; user-select:none}
 #menu_filler  {height:calc(100% - 35px)}
@@ -57,17 +51,11 @@ header       {width:100%; height:135px; padding: 0 200px 0; background: #2F5597}
 
 .menu_group   {display:inline-block; vertical-align:top}
 .menu_title   {height:35px; padding-top:5px; text-align:right; vertical-align:bottom; font-size:1.5rem}
-.menu_title:hover {
-    background:white;
-    color:#2F5597;
-}
+.menu_title:hover {background:white; color:#2F5597}
+
 .menu_subarea {border:4px solid #203864; background:white; padding:10px 10px 0; position:relative; z-index:1000; display:none}
-.menu_subarea a {
-    text-decoration:inherit;
-    background:white;
-}
 .menu_submenu {text-align:right; height:30px; font-size:1.2rem; color:#203864}
-.menu_divider {height:20px; width:4px; background:white; margin:5px 13px 0}
+.menu_divider {height:25px; width:4px; background:white; margin:5px 18px 0}
 
 main {
     width:calc(100% - 2 * 200px);
@@ -77,24 +65,51 @@ main {
     border-width:0 4px 0;
     border-style:solid;
     border-color:#203864;
+    color:#203864;
 }
 
-.main_ul    {display:inline-block; list-style-type:none; margin:0; padding:0; min-height:calc(100vh - 135px - 15px)}
-.main_ul li {height:35px; margin:5px 0 5px; font-size:1.5rem}
+.main_ul          {display:inline-block; list-style-type:none; margin:0; padding:0}
+.main_ul li       {overflow:hidden; height:35px; margin:5px 0 5px; font-size:1.5rem}
+.main_ul li:hover {cursor:default; border-bottom:2px solid #203864}
 
-#search, #filter {
-    cursor: pointer;
-}
+#qno          {text-align:center; padding-right:10px; border-right:4px solid #203864}
+#qtt          {padding-left:10px}
+#qtt li       {width:calc(100% - 10px); overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+#qtt li:hover {cursor:pointer}
+#qdt          {text-align:center; padding:0 10px 0;  border-left:4px solid #203864}
+#qstd         {text-align:center; padding-left:10px; border-left:4px solid #203864}
 
-#qno  {text-align:center; padding-right:10px; border-right:4px solid #203864; width:70px}
-#qtt  {padding-left:10px}
-#qstd {text-align:center; padding-left:10px;  border-left:4px solid #203864;  width:180px}
-
-#sidebar {width:50px; height:200px; position:fixed; z-index:3000; top:calc(135px + 15px - 5px); right:calc(200px - 50px)}
+#sidebar {width:50px; height:200px; position:fixed; z-index:3000; right:calc(200px - 50px)}
 .sidebar_item {height:40px; width:40px; margin:5px; position:relative; z-index:3000}
+#search, #filter {cursor:pointer}
 
-#search_div {border:4px solid #203864; background:white; position:fixed; top:calc(135px + 15px); right:200px; display:none; z-index:3000}
-#search_bar {display:inline-block; float:left; width:440px; height:52px; padding:0 10px 0; margin:0; font-size:1.2rem}
-#search_btn {display:inline-block; float:left; width:52px;  height:52px; border:none; background:url(images/search_square.png); background-size:52px 52px}
+/* search styles */
+
+#search_div {border:4px solid #203864; background:white; position:fixed; right:200px; display:none; z-index:3000; user-select:none; color:#203864}
+
+#search_div input[type="date"] input[type="number"] {height:30px}
+#search_div input:focus {outline:none}
+#search_div input {color:inherit}
+
+#search_top {height:calc(60px - 4px - 4px)}
+#search_bar {display:inline-block; float:left; width:calc(500px - 60px);      height:100%; padding:0 10px 0; margin:0; font-size:1.2rem; border-width:0; border:none; box-shadow:none}
+#search_btn {display:inline-block; float:left; width:calc(60px - 4px - 4px);  height:100%; border:none; background:url(images/search_square.png); background-size:52px 52px}
+
+.search_line {height:30px; margin-bottom:5px}
+
+#search_asker {height:30px; width:150px; border:2px solid #203864}
+
+#filter_div {
+    width:calc(500px - 4px * 2);
+    font-size:1.2rem;
+    border-top: 4px solid #203864;
+    padding:10px
+}
+
+#hashtag_list {height:calc(30px + 13px); width:calc(500px - 4px * 2 - 10px * 2); overflow-x:scroll; overflow-y:hidden; white-space:nowrap; margin-bottom:5px}
+#hashtag_list div {display:inline-block; height:30px; margin-left:10px}
+#hashtag_list div:hover {background:#ffd966}
+
+/* end search styles */
 
 #black_screen {position:fixed; top:0; left:0; right:0; bottom:0; background:black; z-index:2000; opacity:0.5; display:none}

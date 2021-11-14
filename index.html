@@ -6,6 +6,13 @@
     <title>해결이요.com</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="haegyeol.css" />
+    <!-- additional css, 135px -->
+    <style>
+        header      {height:135px}
+        .main_ul    {min-height:calc(100vh - 135px - 15px - 8px)}
+        #sidebar    {top:calc(135px + 15px - 5px)}
+        #search_div {top:calc(135px + 15px)}
+    </style>
     <script src="haegyeol.js"></script>
 </head>
 
@@ -14,6 +21,7 @@
 
 <header>
 <a href="https://해결이요.com/">
+<!-- <div id="banner_sq"></div> -->
 <img src="images/banner_ko.png" id="banner" alt="banner" /></a>
 
 <div id="menu_wrapper">
@@ -28,11 +36,11 @@
             </div>
         </div>
         <div class="menu_group menu_divider"></div>
-        <div class="menu_group" style="width:80px">
+        <div class="menu_group">
             <div class="menu_title">About</div>
         </div>
         <div class="menu_group menu_divider"></div>
-        <div class="menu_group" style="width:70px">
+        <div class="menu_group">
             <div class="menu_title">로그인</div>
         </div>
     </div>
@@ -40,9 +48,9 @@
 
 </header>
 
-<div class="header_line" style="height:4px; background:white  "></div>
-<div class="header_line" style="height:4px; background:#2F5597"></div>
-<div class="header_line" style="height:7px; background:white  "></div>
+<div class="hor_line" style="height:4px; background:white  "></div>
+<div class="hor_line" style="height:4px; background:#2F5597"></div>
+<div class="hor_line" style="height:7px; background:white  "></div>
 
 <main>
     <ul id="qno" class="main_ul" style="width:70px">
@@ -55,8 +63,8 @@
         <li>40</li>
     </ul>
 
-    <ul id="qtt" class="main_ul" style="width:calc(100% - 70px - 200px)">
-        <li>질문 1</li>
+    <ul id="qtt" class="main_ul" style="width:calc(100% - 70px - 150px - 120px)">
+        <a href="https://google.com"><li>질문 sdfsdfsd1</li></a>
         <li>질문 2</li>
         <li>질문 3</li>
         <li>질문 1</li>
@@ -65,17 +73,27 @@
         <li>질문 1</li>
     </ul>
 
-    <ul id="qstd" class="main_ul" style="width:200px">
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
-        <li>20-046 박지훈</li>
+    <ul id="qdt" class="main_ul" style="width:150px">
+        <li>11월 14일</li>
+        <li>11월 13일</li>
+        <li>11월 12일</li>
+        <li>11월 11일</li>
+        <li>11월 10일</li>
+        <li>11월 9일</li>
+        <li>11월 8일</li>
     </ul>
-</div>
 
+    <ul id="qstd" class="main_ul" style="width:120px">
+        <li>20-046</li>
+        <li>20-046</li>
+        <li>20-046</li>
+        <li>20-046</li>
+        <li>20-046</li>
+        <li>20-046</li>
+        <li>20-046</li>
+    </ul>
+
+<div class="hor_line" style="height:8px; background:white"></div>
 </main>
 
 <div id="sidebar">
@@ -85,25 +103,57 @@
     <a href="#bottom"><img class="sidebar_item" src="images/down.png" /></a>
 </div>
 
-<!-- Need to move to css -->
+<!-- Need to move to css, need to add to qna -->
 
 <div id="search_div">
-    <div style="height:52px">
-        <form action="" method="get">
-            <input id="search_bar" />
-            <button id="search_btn"></button>
-        </form>
+<form action="" method="get">
+    <div id="search_top">
+        <input id="search_bar" name="query" />
+        <button id="search_btn" type="submit"></button>
     </div>
-    <div id="filter_div" style="font-size:1.2rem; border-top: 4px solid #203864; padding:10px">
-        <div style="height:30px">전체 | 미해결 | 해결</div>
-        <div style="height:30px">인기 해시태그</div>
-        <div style="height:calc(30px + 13px); width:472px; overflow-x:scroll; white-space:nowrap">#분실물 #연락처 #판매/대여 #구매/기증 #교과 질문 #마감 기한 #사용법</div>
-        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>사례금</div>
-        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>추첨</div>
-        <div style="height:30px"><button style="width:16px; height:16px; margin-right:10px"></button>설문</div>
-        <div style="height:30px">질문자: <input style="height:30px; width:150px; border:2px solid #203864" value="학번"></input></div>
+    <div id="filter_div">
+        <div class="search_line">
+            <label><input type="radio" name="category" value="all" />전체</label>
+            <label><input type="radio" name="category" value="solved" />해결</label>
+            <label><input type="radio" name="category" value="unsolved" checked="checked" />미해결</label>
+        </div>
+        <div id="hashtag_list">
+            <!-- KSA 21 대화톡을 분석하여 제작함 -->
+            <div>#사람찾습니다</div>
+            <div>#연락부탁드립니다</div>
+            <div>#구합니다</div>
+            <div>#삽니다</div>
+            <div>#기증합니다</div>
+            <div>#대여합니다</div>
+            <div>#팝니다</div>
+            <div>#잃어버렸습니다</div>
+            <div>#찾았습니다</div>
+            <div>#트레이드</div>
+            <div>#R&E</div>
+            <div>#연기세</div>
+            <div>#링크</div>
+            <div>#연락처</div>
+            <div>#파일</div>
+        </div>
+        <div class="search_line">
+            <label><input type="checkbox" name="reward" />사례</label>
+        </div>
+        <div class="search_line">
+            <span>질문자 학번: </span>
+            <input type="number" name="stdyear" placeholder="기수" min="0" max="99" />
+            <span>&nbsp;-&nbsp;</span>
+            <input type="number" name="stdnum" placeholder="번호" min="0" max="999" />
+        </div>
+        <div class="search_line">
+            <input type="date" name="date_start" />
+            <span>&nbsp;~&nbsp;</span>
+            <input type="date" name="date_end" />
+        </div>
     </div>
+</form>
 </div>
+
+<!-- until here -->
 
 <div id="black_screen"></div>
 
