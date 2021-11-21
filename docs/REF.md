@@ -1,4 +1,4 @@
-# 2021-11-05 이전, 일부만 기록되어 있음
+# ~2021-11-0, 일부만 기록되어 있음
 
 https://jos39.tistory.com/170
 
@@ -157,3 +157,5 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Ar
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return
 
 https://www.w3schools.com/css/css_align.asp
+
+https://serverfault.com/questions/151090/is-there-a-maximum-size-for-content-of-an-http-post

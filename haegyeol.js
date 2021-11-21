@@ -71,7 +71,7 @@ window.onload = function() {
             alert("Something's wrong!");
         }
     });
-}
+};
 
 var outer_link;
 var showing_sidebar = "none";
