@@ -1,4 +1,6 @@
-# ~2021-11-0?, 일부만 기록되어 있음
+# 2021년 2학기
+
+## ~2021-11-0? / 일부만 기록되어 있음
 
 https://jos39.tistory.com/170
 
@@ -24,7 +26,7 @@ https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none
 
 https://stackoverflow.com/q/34654635
 
-# 2021-11-06
+## 2021-11-06
 
 https://stackoverflow.com/q/9810578
 
@@ -68,7 +70,7 @@ https://aboooks.tistory.com/82
 
 https://www.computerhope.com/issues/ch001475.htm
 
-# 2021-11-07
+## 2021-11-07
 
 https://developer.mozilla.org/ko/docs/Web/CSS/cursor
 
@@ -92,7 +94,7 @@ https://www.w3schools.com/cssref/pr_border-top.asp
 
 https://stackoverflow.com/q/24917983
 
-# 2021-11-08
+## 2021-11-08
 
 https://stackoverflow.com/q/11426275
 
@@ -122,7 +124,7 @@ https://gist.github.com/LeoHeo/7c2a2a6dbcf80becaaa1e61e90091e5d
 
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for
 
-# 2021-11-09
+## 2021-11-09
 
 https://stackoverflow.com/q/4220126
 
@@ -134,7 +136,7 @@ https://stackoverflow.com/q/895171
 
 https://studio2b.tistory.com/32
 
-# 2021-11-14
+## 2021-11-14
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
 
@@ -159,3 +161,19 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return
 https://www.w3schools.com/css/css_align.asp
 
 https://serverfault.com/questions/151090/is-there-a-maximum-size-for-content-of-an-http-post
+
+# 2022년 1학기
+
+## 2022-05-24
+
+https://heropy.blog/2017/09/30/markdown/
+
+https://docs.djangoproject.com/ko/4.0/intro/tutorial01/
+
+https://losskatsu.github.io/programming/function-module-package/#3-%ED%8C%A8%ED%82%A4%EC%A7%80%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC
+
+https://stackoverflow.com/questions/448271/what-is-init-py-for
+
+https://sqlitebrowser.org/dl/
+
+https://stackoverflow.com/questions/29980211/django-1-8-whats-the-difference-between-migrate-and-makemigrations
